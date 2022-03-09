@@ -6,7 +6,7 @@ import java.util.Iterator;
 
 public class DemoArrayList {
 
-    public void iterateTheArrays(){
+    public void iterateTheArrays() {
         ArrayList<Integer> test = new ArrayList<>();
         test.add(10);
         test.add(20);
@@ -24,7 +24,24 @@ public class DemoArrayList {
         }
     }
 
-    public static void main(String[] args) {
-
+    public void Arrays() {
+        ArrayList<Integer> test = new ArrayList<>();
+        test.add(10);
+        test.add(20);
+        test.add(30);
+        test.add(30);
+        test.add(20);
+        test.add(10);
+        Iterator<Integer> i = test.iterator();
+        while (i.hasNext()) {
+            System.out.println("hashset" + i.next());
+        }
+        HashSet<Integer> test1 = new HashSet<>(test);
+        for (Integer value : test1) {
+        }
     }
-}
+        public static void main (String[] args){
+
+        }
+    }
+
